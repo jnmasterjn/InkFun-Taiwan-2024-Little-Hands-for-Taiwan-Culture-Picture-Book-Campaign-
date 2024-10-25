@@ -3,52 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <title>InkFun Taiwan 2024</title>
     <style>
         body {
             text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Comic Neue', cursive;
+            background-color: #e8f5e9; /* Light green background for nature feel */
+            color: #2e7d32; /* Dark green text */
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 28px;
+            margin: 20px;
+            padding: 10px;
+            line-height: 1.4;
+            background-color: #a5d6a7; /* Soft green for title background */
+            color: #1b5e20; /* Dark green for title text */
+            border-radius: 10px;
+            max-width: 90%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         img {
             width: 80%;
             max-width: 800px;
             margin: 20px auto;
-            border: 2px solid #ccc;
+            border: 2px solid #c8e6c9; /* Soft green border for a gentle touch */
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .navigation {
             margin: 20px;
         }
         .navigation button {
-            background-color: #4CAF50; /* Green */
+            background-color: #81c784; /* Green for a nature feel */
             border: none;
             color: white;
-            padding: 15px 32px;
+            padding: 12px 28px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
+            font-family: 'Comic Neue', cursive;
+            margin: 6px;
             cursor: pointer;
             border-radius: 8px;
             transition: background-color 0.3s ease;
         }
         .navigation button:hover {
-            background-color: #45a049; /* Darker green on hover */
+            background-color: #66bb6a; /* Darker green on hover */
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #a5d6a7;
+            color: #1b5e20;
+            font-size: 16px;
+            border-top: 2px solid #2e7d32;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Book</h1>
+    <h1>InkFun Taiwan 2024: Little Hands for Taiwan Culture Picture Book</h1>
     <div class="book-container">
         <img id="book-page" src="1.png" alt="Book Page">
     </div>
     <div class="navigation">
-        <button onclick="prevPage()">Previous</button>
-        <button onclick="nextPage()">Next</button>
+        <button onclick="prevPage()">&#8592;</button> 
+        <button onclick="nextPage()">&#8594;</button> 
+        <button onclick="window.location.href='index.html'">Go Back To HomePage</button>
     </div>
+    
 
     <script>
         const pages = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png'];
@@ -73,5 +100,9 @@
             }
         }
     </script>
+    <footer>
+        &copy; 2024 Janice Shih | InkFun Taiwan
+    </footer>
 </body>
 </html>
+
